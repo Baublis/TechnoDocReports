@@ -1,72 +1,66 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Таблица данных</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            font-size: 12px;
-            color: black;
-        }
-        th, td {
-            border: 2px solid #000;
-            padding: 5px;
-            text-align: center;
-            vertical-align: middle;
-            min-width: 90px;
-        }
-        th {
-            background-color: rgb(100, 149, 237);
-        }
-        .header-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }
-        .sub-header-container {
-            display: flex;
-            width: 100%;
-            border-top: 2px solid #000;
-        }
-        .sub-header-item {
-            flex: 1;
-            min-width: 90px;
-            border-right: 2px solid #000;
-            padding: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-sizing: border-box;
-        }
-        .sub-header-item:last-child {
-            border-right: none;
-        }
-        .data-container {
-            display: flex;
-            width: 100%;
-        }
-        .data-item {
-            flex: 1;
-            min-width: 90px;
-            padding: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-right: 2px solid #000;
-        }
-        .data-item:last-child {
-            border-right: none;
-        }
-        .mode-header {
-            min-width: 90px;
-        }
-    </style>
-</head>
-<body>
+<meta charset="UTF-8">
+<title></title>
+<style type="text/css">table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+    color: black;
+}
+th, td {
+    border: 2px solid #000;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 90px;
+}
+th {
+    background-color: rgb(100, 149, 237);
+}
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.sub-header-container {
+    display: flex;
+    width: 100%;
+    border-top: 2px solid #000;
+}
+.sub-header-item {
+    flex: 1;
+    min-width: 90px;
+    border-right: 2px solid #000;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.sub-header-item:last-child {
+    border-right: none;
+}
+.data-container {
+    display: flex;
+    width: 100%;
+}
+.data-item {
+    flex: 1;
+    min-width: 90px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #000;
+}
+.data-item:last-child {
+    border-right: none;
+}
+.mode-header {
+    min-width: 90px;
+}
+</style>
 <table border="2">
     <thead>
     <tr>
@@ -81,15 +75,23 @@
         <th rowspan="2">Параметры по физ. замеру</th>
         <th rowspan="2" colspan="8">
             <div class="header-container">
-                <div style="padding-bottom: 5px;">Дата</div>
+                <div style="padding-bottom: 5px;"><span data-parameter="" title="Метка времени: Конец шага" contenteditable="false" class="parameter-highlight">%Время шага%</span></div>
+
                 <div class="sub-header-container">
                     <div class="sub-header-item">АГЗУ (СКЖ)</div>
+
                     <div class="sub-header-item">Устье (СКЖ)</div>
+
                     <div class="sub-header-item">АГЗУ (РИНГ)</div>
+
                     <div class="sub-header-item">Устье (РИНГ)</div>
+
                     <div class="sub-header-item">Отклон. АГЗУ (СКЖ)</div>
+
                     <div class="sub-header-item">Отклон. Устье (СКЖ)</div>
+
                     <div class="sub-header-item">Отклон. АГЗУ (РИНГ)</div>
+
                     <div class="sub-header-item">Отклон. Устье (РИНГ)</div>
                 </div>
             </div>
@@ -116,18 +118,23 @@
         <td>Параметры</td>
         <td colspan="8">
             <div class="data-container">
-                <div class="data-item">Данные 1</div>
-                <div class="data-item">Данные 2</div>
-                <div class="data-item">Данные 3</div>
-                <div class="data-item">Данные 4</div>
-                <div class="data-item">Данные 5</div>
-                <div class="data-item">Данные 6</div>
-                <div class="data-item">Данные 7</div>
-                <div class="data-item">Данные 8</div>
+                <div class="data-item"><span data-parameter="" title="Метка времени: Конец шага" contenteditable="false" class="parameter-highlight">%Параметр 1%</span></div>
+
+                <div class="data-item">&nbsp;</div>
+
+                <div class="data-item">&nbsp;</div>
+
+                <div class="data-item">&nbsp;</div>
+
+                <div class="data-item">&nbsp;</div>
+
+                <div class="data-item">&nbsp;</div>
+
+                <div class="data-item">&nbsp;</div>
+
+                <div class="data-item">&nbsp;</div>
             </div>
         </td>
     </tr>
     </tbody>
 </table>
-</body>
-</html>
